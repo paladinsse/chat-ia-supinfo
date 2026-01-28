@@ -1,0 +1,192 @@
+/* *{
+    margin : 0;
+    padding : 0;
+} */
+
+/* body {
+background : #444;
+}
+
+header{
+    background : #000;
+    height : 50px;
+    color : #fff;
+}
+
+H1{
+    margin-left : 550px;
+} */
+
+.chat-container {
+width: 80%; /* Prend 80% de la largeur du parent */
+max-width: 700px; /* Mais pa    s plus de 700px */
+margin: 30px auto; /* Centre horizontalement et espace verticalement */
+background-color: #222; /* Fond blanc pour le conteneur */
+padding: 20px; /* Espace interne de 20px */
+border: 1px solid #111; /* Bordure fine et claire */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Une ombre légère */
+border-radius: 8px; /* Coins legerement arrondis */
+color : #eee;
+}
+
+#chat-form {
+display: flex; /* Rend le conteneur flexible */
+margin-top: 20px; /* Espace au-dessus de la zone de saisie */
+}
+
+#user-input {
+flex-grow: 1; /* Prend l'espace disponible */
+padding: 10px; /* Espace interne */
+border: 1px solid #333; /* Bordure simple */
+background : #555;
+color : #eee;
+border-radius: 4px; /* Coins légèrement arrondis */
+margin-right: 10px; /* Espace à droite pour le bouton */
+font-size: 16px; /* Taille de police */
+}
+
+.bouton{
+background-color: #333;; /* Couleur bleue vive */
+color: white; /* Texte blanc */
+border: 1px solid #444; /* Pas de bordure */
+padding: 10px 15px; /* Espace interne */
+border-radius: 4px; /* Coins arrondis */
+cursor: pointer; /* Indique que le bouton est cliquable */
+font-size: 16px; /* Taille de police */
+}
+
+.bouton:hover {
+background-color: #555; /* Un bleu plus fonce au survol */
+
+}
+
+
+/* footer{
+    background: #000;
+    margin-top: 326px;
+    height : 50px;
+}
+
+a{
+    color : white;
+    text-decoration : none;
+    margin-left : 550px;
+} */
+@media (max-width: 768px) {
+h1 {
+font-size: 28px;
+
+}
+
+.chat-container {
+width: 95%;
+margin: 20px auto;
+padding: 15px;
+
+}
+
+#user-input,
+#bouton {
+padding: 10px 12px;
+font-size: 15px;
+}
+
+.message {
+max-width: 85%;
+padding: 10px 15px;
+font-size: 14px;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 22px;
+
+}
+
+.chat-container {
+width: 100%;
+margin: 0;
+padding: 10px;
+border-radius: 0;
+box-shadow: none;
+
+}
+
+.message {
+max-width: 90%;
+font-size: 13px;
+padding: 8px 12px;
+border-radius: 15px;
+
+}
+
+#chat-form {
+flex-direction: column;
+padding: 8px;
+
+}
+
+#user-input {
+margin-right: 0;
+margin-bottom: 8px;
+width: 100%;
+}
+.bouton{
+    width : 100%;
+}
+}
+
+
+.reset-button {
+background: #c00;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-bottom: 15px;
+transition: background-color 0.2s ease, transform 0.1s ease;
+align-self: flex-start;
+}
+
+.reset-button:hover {
+background: #a00;
+transform: translateY(-1px);
+}
+
+.loader-hidden {
+display: none !important; /* !important assure que cette règle prévaut */
+}
+
+#loader {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 15px 0;
+color: var( -- loader-text-color, #777777);
+font-style: italic;
+font-size: 14px;
+margin-top: 10px;
+}
+
+.spinner {
+width: 24px;
+height: 24px;
+border: 3px solid rgba(0, 0, 0, 0.1);
+border-left-color: var( -- spinner-active-color, #007bff);
+border-radius: 50%; /* Pour une forme de cercle */
+animation: spinAnimation 0.8s linear infinite; /* Animation de rotation */
+margin-right: 10px; /* Espace entre le spinner et le texte */
+}
+
+@keyframes spinAnimation {
+0% {
+transform: rotate(0deg);
+}
+
+100% {
+transform: rotate(360deg);
+}
+}
